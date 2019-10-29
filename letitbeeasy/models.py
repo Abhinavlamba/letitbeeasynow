@@ -16,7 +16,6 @@ class Content(models.Model):
     matter = models.CharField(max_length=100, blank=True, default='')
     author = models.CharField(max_length=100, blank=True, default='')
     key = models.IntegerField(default=0)
-    image= models.FileField(upload_to="1/",default='abcd/')
     def save(self, *args, **kwargs):
         super(Content, self).save(*args, **kwargs)
 
