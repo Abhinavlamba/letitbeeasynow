@@ -5,12 +5,13 @@ from django.conf.urls import include
 from django.conf.urls.static import static
 import settings
 from django.conf import settings
-
+from django.contrib import admin
 urlpatterns = [
     path('users/', views.UserList.as_view()),
     path('users/<int:pk>/', views.UserDetail.as_view()),
     path('content/', views.ContentList.as_view()),
     path('content/<int:pk>/', views.ContentDetail.as_view()),
+    path('admin/',admin.site.urls),
 ]
 urlpatterns += [
     path('', views.api_root),
