@@ -8,4 +8,4 @@ class UserSerializer(serializers.ModelSerializer):
 class ContentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Content
-        fields = ['id', 'tosent', 'position', 'subject', 'matter', 'author','key']
+        fields = ['id', 'tosent', 'position', 'subject', 'matter', 'author','key','image']
