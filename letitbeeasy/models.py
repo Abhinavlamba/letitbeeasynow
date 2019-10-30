@@ -19,7 +19,6 @@ class Content(models.Model):
     image = models.FileField(upload_to='1/',default='abcd/')
     def save(self, *args, **kwargs):
         super(Content, self).save(*args, **kwargs)
-
     class Meta:
         ordering = ['created']
 class User(models.Model):
